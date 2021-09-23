@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Show Image</title>
+    <style>
+      .float-container {
+        padding: 20px;
+      }
+
+      .float-child {
+        width: 45%;
+        float: left;
+        padding: 20px;
+      }  
+    </style>
+  </head>
+  
+  <body>
+    <div class="float-container">
+      <div class="float-child">
+        <img src="/<%= @filename %>" />
+        <br/><br/>
+        <% @labels.each do |label| %>
+          #<%=label[:name].downcase+" "%>
+        <%=  %>
+        <% end %>
+      </div>
+      
+      <div class="float-child">
+        <table>
+          <tr>
+            <th>Hashtag</th>
+            <th>Precision</th>
+          </tr>
+          <% @labels.each do |label| %>
+            <tr>
+              <td>#<%=label[:name].downcase%></td>
+              <td><%=label[:confidence].round(2)%>%</td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
