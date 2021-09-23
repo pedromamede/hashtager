@@ -20,7 +20,12 @@
         <img src="/<%= @filename %>" />
         <br/><br/>
         <% @labels.each do |label| %>
-          #<%=label[:name].downcase+" "%>
+          #<%=label[:name].split(" ").map(&:capitalize).join+" "%>
+        <%=  %>
+        <% end %>
+        <br/><br/>
+        <% @labels.each do |label| %>
+          #<%=label[:name].split(" ").map(&:downcase).join+" "%>
         <%=  %>
         <% end %>
       </div>
@@ -33,7 +38,7 @@
           </tr>
           <% @labels.each do |label| %>
             <tr>
-              <td>#<%=label[:name].downcase%></td>
+              <td><%=label[:name]%></td>
               <td><%=label[:confidence].round(2)%>%</td>
             </tr>
           <% end %>
