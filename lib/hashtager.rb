@@ -4,9 +4,9 @@ class Hashtager
 
   def self.test
     client = Aws::Rekognition::Client.new(
-      region:  ENV['AWS_REGION'] || 'us-east-1',
-      access_key_id: ENV['AWS_ACCESS_KEY_ID'], 
-      secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+      region:  ENV['HASHTAGER_AWS_REGION'] || 'us-east-1',
+      access_key_id: ENV['HASHTAGER_AWS_ACCESS_KEY_ID'], 
+      secret_access_key: ENV['HASHTAGER_AWS_SECRET_ACCESS_KEY']
     )
 
     photo = 'photo.jpg'
@@ -22,9 +22,7 @@ class Hashtager
     })
 
     resp.labels.each do |label|
-      p '========='
       p "#{label.name} - #{label.confidence}"
-      p '========='
     end
   end
 end
