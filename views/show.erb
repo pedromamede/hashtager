@@ -17,7 +17,7 @@
   <body>
     <div class="float-container">
       <div class="float-child">
-        <img src="/<%= @filename %>" />
+        <img width='600px' src="/<%= @filename %>" />
         <br/><br/>
         <% @labels.each do |label| %>
           #<%=label[:name].split(" ").map(&:capitalize).join+" "%>
