@@ -18,13 +18,12 @@ class Hashtager
         bytes: file
       }, 
       max_labels: 30, 
-      min_confidence: 70, 
+      min_confidence: 50, 
     })
 
     resp.labels.each do |label|
       p '========='
-      p label.name
-      p label.confidence
+      p "#{label.name} - #{label.confidence}"
       p '========='
     end
   end
