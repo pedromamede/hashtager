@@ -2,7 +2,7 @@
 
 - Upload your image and get automatic hash tags for it
 
-- This project uses Sinata (simple and lighweight ruby web application lib) and Rekognition (AWS service that use deep neural network models to detect and label objects and scenes in your images)
+- This project uses Sinatra (simple and lighweight ruby web application lib) and Rekognition (AWS service that use deep neural network models to detect and label objects and scenes in your images)
 
 
 ## Dependencies
