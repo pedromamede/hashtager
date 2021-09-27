@@ -16,12 +16,9 @@
 
 ## Development Setup
 
-  
-
-- Create a .env file\
+- Create a .env file
 
 `touch .env`
-
 
 - Add these lines to the .env file
 
@@ -37,7 +34,7 @@ HASHTAGER_AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
 
 `ruby app.rb`
 
-- Access the app page at http://localhost:4567\
+- Access the app page at http://localhost:4567
 
   
 
