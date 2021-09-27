@@ -35,7 +35,9 @@ HASHTAGER_AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
 
 - Access the app page at http://localhost:4567
 
-  
+## Project preview
+
+![Alt text](/example.jpg?raw=true)
 
 ## About the AWS Account/User
 
