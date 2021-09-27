@@ -8,7 +8,6 @@
 ## Dependencies
 
 - Ruby 3.x
-- Sinatra
 - Bundler
 - AWS Account credentials (Warning: this project use the detect label feature from rekognition service, it's not free of charge, at the moment this app was written AWS allows 5k images montly for free)
 
